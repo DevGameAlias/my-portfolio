@@ -1,12 +1,12 @@
+import React from "react";
+import AppRouter from "./router/AppRouter";
 
-import './App.css';
-
-function App() {
+const App = () => {
   return (
-    <div>
-
+    <div className="font-sans">
+      <AppRouter />
     </div>
   );
-}
+};
 
 export default App;
