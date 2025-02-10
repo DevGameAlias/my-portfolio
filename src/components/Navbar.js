@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaHome, FaBriefcase, FaUser, FaEnvelope } from "react-icons/fa";
 
+
+
 const Navbar = () => {
   return (
     <nav className="flex justify-around bg-gray-800 text-white p-4">

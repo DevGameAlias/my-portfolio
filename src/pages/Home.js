@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-600 to-blue-300 flex flex-col items-center justify-center">
@@ -7,15 +8,6 @@ const Home = () => {
       <h1 className="text-4xl font-bold text-white mb-8">Welcome to My Portfolio!</h1>
       {/* CardGrid */}
       <div className="relative w-4/5">
-        {/* Connecting Bar */}
-        <div 
-  className="absolute top-1/2 transform -translate-y-1/2 left-1/2 -translate-x-1/2 bg-white shadow-lg rounded-lg"
-  style={{
-    width: "calc(70% - 2rem)", // Matches the card grid width
-    height: "8rem", // Bar height
-    top: "calc(50% - 6rem)", // Aligns the bar with the images (adjust based on image size)
-  }}
-></div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Cards */}
