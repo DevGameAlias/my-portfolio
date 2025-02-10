@@ -1,27 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaHome, FaBriefcase, FaUser, FaEnvelope } from "react-icons/fa";
 
-
+// Correct image imports
+import homeIcon from "../assets/home-image.png";
+import portfolioIcon from "../assets/portfolio-image.png";
+import aboutIcon from "../assets/about-me-image.png";
+import contactIcon from "../assets/contact-me.png";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-around bg-gray-800 text-white p-4">
-      <Link to="/" className="flex items-center space-x-2">
-        <FaHome />
-        <span>Home</span>
+    <nav className="fixed top-0 left-0 w-full bg-gray-800 text-white p-6 flex justify-around shadow-md z-50">
+      {/* Updated Home Link - Takes User to Landing Page */}
+      <Link to="/" className="flex flex-col items-center space-y-2">
+        <img src={homeIcon} alt="Home" className="w-24 h-24 rounded-full border-4 border-white hover:scale-110 transition-transform" />
+        <span className="text-lg font-semibold">Home</span>
       </Link>
-      <Link to="/portfolio" className="flex items-center space-x-2">
-        <FaBriefcase />
-        <span>Portfolio</span>
+
+      <Link to="/portfolio" className="flex flex-col items-center space-y-2">
+        <img src={portfolioIcon} alt="Portfolio" className="w-24 h-24 rounded-full border-4 border-white hover:scale-110 transition-transform" />
+        <span className="text-lg font-semibold">Portfolio</span>
       </Link>
-      <Link to="/about" className="flex items-center space-x-2">
-        <FaUser />
-        <span>About Me</span>
+
+      <Link to="/about" className="flex flex-col items-center space-y-2">
+        <img src={aboutIcon} alt="About Me" className="w-24 h-24 rounded-full border-4 border-white hover:scale-110 transition-transform" />
+        <span className="text-lg font-semibold">About Me</span>
       </Link>
-      <Link to="/contact" className="flex items-center space-x-2">
-        <FaEnvelope />
-        <span>Contact</span>
+
+      <Link to="/contact" className="flex flex-col items-center space-y-2">
+        <img src={contactIcon} alt="Contact" className="w-24 h-24 rounded-full border-4 border-white hover:scale-110 transition-transform" />
+        <span className="text-lg font-semibold">Contact</span>
       </Link>
     </nav>
   );
