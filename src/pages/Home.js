@@ -5,7 +5,7 @@ const Home = () => {
   return (
 <div className="flex-grow bg-gradient-to-br from-blue-900 via-blue-600 to-blue-300 flex flex-col items-center px-12 pt-24 pb-12">
 {/* Top Centered Image */}
-      <img src={homeImage} alt="Home Icon" className="w-44 h-44 rounded-full border-4 border-white drop-shadow-lg mb-10" />
+      <img src={homeImage} alt="Home Icon" className="w-80 h-80 rounded-full border-4 border-white drop-shadow-lg mb-10" />
 
       {/* Content Sections */}
       <div className="max-w-7xl w-full space-y-16">

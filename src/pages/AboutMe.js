@@ -17,7 +17,7 @@ const AboutMe = () => {
           <div className="text-white text-lg leading-relaxed">
             <h2 className="text-3xl font-bold mb-4">Who I Am</h2>
             <p>
-              Hi, I’m Ricardo Lugo, a passionate full-stack developer with a love for problem-solving
+              Hi, I’m Ricardo, a passionate full-stack developer with a love for problem-solving
               and building meaningful digital experiences. I specialize in JavaScript, React, and modern
               web technologies to create seamless and interactive applications.
             </p>
