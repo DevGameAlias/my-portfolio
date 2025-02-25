@@ -1,19 +1,20 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom"; // React Router Hook
-import homeImage from "../assets/home-image.png";
-import portfolioImage from "../assets/portfolio-image.png";
-import aboutMeImage from "../assets/about-me-image.png";
-import contactImage from "../assets/contact-me.png";
+import homeImage from "../assets/home-image.png"; // Home Page Image
+import portfolioImage from "../assets/portfolio-image.png"; // Portfolio Page Image
+import aboutMeImage from "../assets/about-me-image.png"; // About Me Page Image
+import contactImage from "../assets/contact-me.png"; // Contact Page Image
 
 const Landing = () => {
   const navigate = useNavigate(); // Hook for navigation
 
+  // Define cards for navigation with title, image, and path
   const cards = [
-    { title: "Home", image: homeImage, path: "/home" },
-    { title: "Portfolio", image: portfolioImage, path: "/portfolio" },
-    { title: "About Me", image: aboutMeImage, path: "/about" },
-    { title: "Contact", image: contactImage, path: "/contact" },
+    { title: "Home", image: homeImage, path: "/home", description: "Discover who I am, my journey, and my approach to creating innovative solutions." },
+    { title: "Portfolio", image: portfolioImage, path: "/portfolio", description: "Explore the projects I've worked on, showcasing my skills in development and design." },
+    { title: "About Me", image: aboutMeImage, path: "/about", description: "Learn more about my background, passions, and the experiences that shaped my career." },
+    { title: "Contact", image: contactImage, path: "/contact", description: "Get in touch with me for collaborations, questions, or opportunities to work together." },
   ];
 
   return (
@@ -51,7 +52,8 @@ const Landing = () => {
                 <img src={card.image} alt={card.title} className="w-full h-full object-cover rounded-full" />
               </div>
 
-              <p className="absolute bottom-2 text-gray-600 text-center w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              {/* Description positioned higher with padding */}
+              <p className="absolute bottom-24 px-4 text-gray-600 text-center w-full">{card.description}</p>
             </div>
           ))}
         </div>
