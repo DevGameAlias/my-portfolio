@@ -1,0 +1,32 @@
+.parallax-carousel .carousel .slider-wrapper {
+  overflow: visible;
+  background-color: rgba(164, 209, 211, 0.5); /* Different background color for separation */
+  padding: 20px; /* Add padding to create space around the slides */
+  border-radius: 50px; /* Rounded corners */
+}
+
+.parallax-carousel .carousel .slide {
+  opacity: 0.6;
+  transform: scale(0.8);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.parallax-carousel .carousel .slide.selected {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.parallax-carousel .carousel .slide img {
+  transition: transform 0.5s;
+}
+
+.parallax-carousel .carousel .slide:hover img {
+  transform: scale(1.05);
+}
+
+.slide-background {
+  background-color: rgb(32, 40, 43); /* Background color for the image wrapper */
+  padding: 10px; /* Padding around the image */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Shadow for 3D effect */
+}
