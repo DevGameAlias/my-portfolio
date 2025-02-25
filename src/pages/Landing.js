@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom"; // React Router Hook
 import homeImage from "../assets/home-image.png";
 import portfolioImage from "../assets/portfolio-image.png";
@@ -17,6 +18,22 @@ const Landing = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-600 to-blue-300 flex flex-col items-center justify-center">
+      <Helmet>
+        <title>Welcome - My Portfolio</title>
+        <meta name="description" content="Welcome to my personal portfolio showcasing my projects, skills, and contact information." />
+        <meta property="og:title" content="Welcome - My Portfolio" />
+        <meta property="og:description" content="Welcome to my personal portfolio showcasing my projects, skills, and contact information." />
+        {/* TODO: Replace 'link_to_your_image.jpg' with the actual URL of your representative image */}
+        <meta property="og:image" content="link_to_your_image.jpg" />
+        {/* TODO: Replace 'https://your-portfolio-url.com' with the actual URL of your portfolio */}
+        <meta property="og:url" content="https://your-portfolio-url.com" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Welcome - My Portfolio" />
+        <meta name="twitter:description" content="Welcome to my personal portfolio showcasing my projects, skills, and contact information." />
+        {/* TODO: Replace 'link_to_your_image.jpg' with the actual URL of your representative image */}
+        <meta name="twitter:image" content="link_to_your_image.jpg" />
+      </Helmet>
       <h1 className="text-4xl font-bold text-white mb-8">Welcome to My Portfolio!</h1>
 
       <div className="relative w-4/5">
@@ -34,9 +51,7 @@ const Landing = () => {
                 <img src={card.image} alt={card.title} className="w-full h-full object-cover rounded-full" />
               </div>
 
-              <p className="absolute bottom-2 text-gray-600 text-center w-full">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              <p className="absolute bottom-2 text-gray-600 text-center w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           ))}
         </div>
@@ -46,4 +61,3 @@ const Landing = () => {
 };
 
 export default Landing;
-

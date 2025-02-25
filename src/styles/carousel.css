@@ -1,8 +1,8 @@
 .parallax-carousel .carousel .slider-wrapper {
   overflow: visible;
-  background-color: rgba(164, 209, 211, 0.5); /* Different background color for separation */
+  background-color: rgba(0, 0, 0, 0.5); /* Different background color for separation */
   padding: 20px; /* Add padding to create space around the slides */
-  border-radius: 50px; /* Rounded corners */
+  border-radius: 10px; /* Rounded corners */
 }
 
 .parallax-carousel .carousel .slide {
@@ -25,8 +25,35 @@
 }
 
 .slide-background {
-  background-color: rgb(32, 40, 43); /* Background color for the image wrapper */
+  background-color: rgb(58, 183, 250); /* Background color for the image wrapper */
   padding: 10px; /* Padding around the image */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Shadow for 3D effect */
+}
+
+.carousel-arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  color: rgb(235, 217, 217);
+  cursor: pointer;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.carousel-arrow-prev {
+  left: 10px;
+}
+
+.carousel-arrow-next {
+  right: 10px;
+}
+
+.carousel-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
