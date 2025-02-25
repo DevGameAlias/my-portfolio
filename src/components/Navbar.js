@@ -10,9 +10,8 @@ const Navbar = () => {
     <>
       {/* Navbar Wrapper */}
       <div className="h-32"></div> {/* Creates space for navbar height */}
-      
       <nav className="fixed top-0 left-0 w-full bg-gray-800 text-white p-6 flex justify-around shadow-md z-50">
-        <Link to="/" className="flex flex-col items-center space-y-2">
+        <Link to="/home" className="flex flex-col items-center space-y-2">
           <img src={homeIcon} alt="Home" className="w-24 h-24 rounded-full border-4 border-white drop-shadow-lg hover:scale-110 transition-transform" />
           <span className="text-lg font-semibold">Home</span>
         </Link>
@@ -37,5 +36,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-

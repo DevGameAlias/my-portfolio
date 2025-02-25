@@ -1,0 +1,67 @@
+/* Home.css */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a202c; /* Dark background */
+  font-family: "Arial", sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Techy glow effect for appCSSImage */
+.appCSSImage,
+.appJSImage {
+  width: 30%; /* Adjust width to make it smaller */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); /* Soft techy glowing effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.appCSSImage:hover,
+.appJSImage:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 0 30px rgba(0, 255, 255, 1); /* Intensified glow effect */
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); /* Soft glowing effect */
+}
+
+.w-80 {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6); /* Glow effect */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.w-80:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 1); /* Glow effect when hovered */
+}
+
+.object-cover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.object-cover:hover {
+  transform: scale(1.05); /* Subtle zoom on hover */
+}
