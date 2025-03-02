@@ -1,6 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import portfolioImage from "../assets/portfolio-image.png"; // Portfolio Image
+import userProfile from "../assets/Userprofile.png";
+import blogCreation from "../assets/Blogcreation.png";
+import blogComment from "../assets/Blogcomment.png";
+import blogHomepage from "../assets/BlogHomepage.png";
+import emailSign from "../assets/emailsignup.png";
 
 const Portfolio = () => {
   return (
@@ -37,10 +42,11 @@ const Portfolio = () => {
           {/* Images Grid */}
           <div className="grid grid-cols-2 gap-4">
             {/* TODO replace Images placeholders */}
-            <img src="[IMAGE_1_URL]" alt="Capstone Screenshot 1" className="rounded-lg shadow-lg" />
-            <img src="[IMAGE_2_URL]" alt="Capstone Screenshot 2" className="rounded-lg shadow-lg" />
-            <img src="[IMAGE_3_URL]" alt="Capstone Screenshot 3" className="rounded-lg shadow-lg" />
-            <img src="[IMAGE_4_URL]" alt="Capstone Screenshot 4" className="rounded-lg shadow-lg" />
+            <img src={userProfile} alt="Capstone Screenshot 1" className="rounded-lg shadow-lg" />
+            <img src={blogCreation} alt="Capstone Screenshot 2" className="rounded-lg shadow-lg" />
+            <img src={blogHomepage} alt="Capstone Screenshot 3" className="rounded-lg shadow-lg" />
+            <img src={blogComment} alt="Capstone Screenshot 4" className="rounded-lg shadow-lg" />
+            <img src={emailSign} alt="Capstone Screenshot 5" className="rounded-lg shadow-lg" />
           </div>
         </div>
 
