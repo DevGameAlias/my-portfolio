@@ -35,9 +35,32 @@ const Portfolio = () => {
       <div className="max-w-7xl w-full space-y-16">
         {/* Capstone Project - Text Left, Images Right */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-          <div className="text-white text-lg leading-relaxed">
-            <h2 className="text-3xl font-bold mb-4">Capstone Project</h2>
-            <p>This was my final project from my bootcamp, where I built a fully functional web application. It incorporates front-end, back-end, and database design, along with API integration.</p>
+          <div className="text-white text-lg leading-relaxed text-left">
+            <h2 className="text-3xl font-bold mb-4 text-center">Capstone Project</h2>
+            <p>
+              {" "}
+              <br />
+              For my capstone project, I worked with a team of four developers to create a fully functional web application, where I took on the role of Project Manager. The project allowed me to
+              demonstrate my leadership skills and ability to collaborate in a fast-paced development environment.
+            </p>{" "}
+            <br />
+            <p>
+              We built a dynamic platform with key features, including a home page, blog page, story page, events page, email sign-up, and an admin profile that allows content management. The app’s
+              front-end was developed using React.js, while the back-end was powered by Node.js and Express.js. We utilized MongoDB for the database and integrated third-party APIs to enhance
+              functionality.
+            </p>
+            <br />
+            <p>
+              The admin profile provides the ability to create and edit blog posts and stories, manage events, and review user comments. Throughout the project, I utilized Git for version control and
+              Jira for task management, ensuring smooth coordination and timely delivery. As project manager, I was responsible for overseeing the development process, assigning tasks, and ensuring
+              milestones were met. I facilitated communication, addressed issues, and kept the team focused on delivering the project on time.
+            </p>
+            <br />
+            <p>
+              This project is a reflection of my technical expertise in full-stack development and my ability to manage projects, collaborate effectively, and integrate tools to streamline the
+              development process.
+            </p>
+            <br />
           </div>
           {/* Images Grid */}
           <div className="grid grid-cols-2 gap-4">
@@ -50,29 +73,55 @@ const Portfolio = () => {
           </div>
         </div>
 
-        {/* Upcoming Project Placeholder - Image Right, Text Left */}
+        {/* Upcoming Project Placeholder - Image Left, Text Right */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-          <div className="text-white text-lg leading-relaxed">
-            <h2 className="text-3xl font-bold mb-4">Upcoming Project: Calculator</h2>
-            <p>
-              This is an upcoming calculator project where I will implement complex mathematical logic using JavaScript and React. The goal is to create an interactive and visually engaging
-              calculator.
-            </p>
-          </div>
           <div className="w-80 h-80 bg-gray-400 flex items-center justify-center rounded-lg shadow-lg">
             <span className="text-white text-xl">[ Project Placeholder ]</span>
+          </div>
+          <div className="text-white text-lg leading-relaxed text-left">
+            <h2 className="text-3xl font-bold mb-4 text-center">Themed Calculator</h2>
+            <p>
+              <br />I created a futuristic theme-based calculator using JavaScript and React, combining simple mathematical functionality with an interactive, visually engaging design. The app
+              performs basic arithmetic operations—addition, subtraction, multiplication, and division—along with a Clear button to reset the calculations.
+            </p>
+            <br />
+            <p>
+              The design features a semi-transparent glass pane with holographic, floating buttons that react with dynamic animations. When buttons are pressed, an energy surge effect is shown,
+              transforming into numbers on the display, which creates an engaging, high-tech experience for users. All the visual effects and animations are implemented entirely with CSS, offering a
+              sleek and polished look.
+            </p>
+            <br />
+            <p>
+              The app is built with React's component-based architecture, ensuring modularity and maintainability, while JavaScript handles the math logic. This project showcases my ability to combine
+              functionality with an engaging user interface, resulting in a smooth and intuitive calculator experience.
+            </p>
+            <br />
           </div>
         </div>
 
         {/* Weather App - Text Left, Live Preview Right */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-          <div className="text-white text-lg leading-relaxed">
-            <h2 className="text-3xl font-bold mb-4">Weather App</h2>
+          <div className="text-white text-lg leading-relaxed text-left">
+            <h2 className="text-3xl font-bold mb-4 text-center">Weather App</h2>
             <p>
-              A real-time weather application that fetches API data to display current weather conditions. Built using JavaScript, React, and an external weather API, this project helped me learn how
-              to handle API requests efficiently.
+              <br />
+              For my weather app, I leveraged React and the OpenWeatherMap API to build an interactive and visually dynamic tool that provides real-time weather data, including a 5-day forecast. The
+              app features a temperature toggle between Celsius and Fahrenheit and adjusts the background color based on the current weather conditions, providing a personalized user experience.
             </p>
+            <br />
+            <p>
+              Throughout development, I encountered challenges in integrating weather-themed animations and ensuring the app’s responsiveness across devices. To overcome these, I used Lottie for React
+              and Framer Motion for smooth animations and utilized Tailwind CSS for quick styling and responsive layouts.
+            </p>
+            <br />
+            <p>
+              A significant hurdle was handling API data efficiently, especially ensuring the accurate display of temperature, wind speed, and humidity in a way that felt intuitive. By breaking down
+              the UI into reusable components and optimizing API calls, I was able to streamline performance and make the app feel smooth and responsive.
+            </p>
+            <br />
+            <p>This project showcases my ability to combine backend API integration, dynamic front-end design, and user-focused development in a clean, functional, and aesthetically pleasing app.</p>
           </div>
+
           {/* Live Weather App Preview */}
           <div className="w-80 h-80 bg-gray-900 flex items-center justify-center rounded-lg shadow-lg">
             <iframe src="[LIVE_WEATHER_APP_URL]" title="Weather App" className="w-full h-full rounded-lg" />

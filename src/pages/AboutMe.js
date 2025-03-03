@@ -1,14 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import avatarImage from "../assets/avatar.png"; // Import Avatar Image
-import aboutImage from "../assets/about-me-image.png"; // About Me Image
-import asset1 from "../assets/AppCSSdesign.PNG"; // AppCSSDesign Asset
-import asset2 from "../assets/LoginDesign.PNG"; // LoginDesign
-import asset3 from "../assets/ReactHookdesign.PNG"; // ReactHookDesign
-import asset4 from "../assets/MongoDBDesign.PNG"; // MongoDBDesign
-import asset5 from "../assets/AppjsDesign.PNG"; // AppjsDesign
 import "../styles/carousel.css"; // Import custom carousel styles
 
 const AboutMe = () => {
@@ -19,9 +11,9 @@ const AboutMe = () => {
         <meta name="description" content="Learn more about Ricardo, a passionate full-stack developer specializing in JavaScript, React, and modern web technologies." />
         <meta property="og:title" content="About Me - My Portfolio" />
         <meta property="og:description" content="Learn more about Ricardo, a passionate full-stack developer specializing in JavaScript, React, and modern web technologies." />
-        {/* TODO: Replace 'link_to_your_image.jpg' with the actual URL of your representative image*/}
+        {/* TODO: Replace 'link_to_your_image.jpg' with the actual URL of your representative image */}
         <meta property="og:image" content="link_to_your_image.jpg" />
-        {/* TODO: Replace 'https://your-portfolio-url.com/about' with the actual URL of your portfolio*/}
+        {/* TODO: Replace 'https://your-portfolio-url.com/about' with the actual URL of your portfolio */}
         <meta property="og:url" content="https://your-portfolio-url.com/about" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -31,95 +23,38 @@ const AboutMe = () => {
         <meta name="twitter:image" content="link_to_your_image.jpg" />
       </Helmet>
       {/* Top Centered Avatar Image */}
-      <img src={aboutImage} alt="Avatar" className="w-80 h-80 rounded-full border-4 border-white drop-shadow-lg mb-10" />
-
-      {/* Title */}
-      <h1 className="text-4xl font-bold text-white mb-10">About Me</h1>
+      <img src={avatarImage} alt="Avatar" className="w-80 h-80 rounded-full border-4 border-white drop-shadow-lg mb-10" />
 
       <div className="max-w-7xl w-full space-y-16">
-        {/* Introduction - Text Left, Avatar Right */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-          <div className="text-white text-lg leading-relaxed">
-            <h2 className="text-3xl font-bold mb-4">Who I Am</h2>
-            <p>
-              Hi, I’m Ricardo, a passionate full-stack developer with a love for problem-solving and building meaningful digital experiences. I specialize in JavaScript, React, and modern web
-              technologies to create seamless and interactive applications.
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <img src={avatarImage} alt="Avatar" className="w-72 h-72 rounded-full border-4 border-white drop-shadow-lg" />
-          </div>
-        </div>
-
-        {/* Skills & Technologies - Carousel */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-          <div className="flex justify-start">
-            <Carousel
-              showThumbs={false}
-              showStatus={false}
-              infiniteLoop
-              useKeyboardArrows
-              autoPlay
-              centerMode
-              centerSlidePercentage={70}
-              className="parallax-carousel"
-              renderArrowPrev={(onClickHandler, hasPrev, label) =>
-                hasPrev && (
-                  <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow carousel-arrow-prev">
-                    &lt;
-                  </button>
-                )
-              }
-              renderArrowNext={(onClickHandler, hasNext, label) =>
-                hasNext && (
-                  <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow carousel-arrow-next">
-                    &gt;
-                  </button>
-                )
-              }
-            >
-              <div className="carousel-slide">
-                <div className="slide-background">
-                  <img src={asset1} alt="Asset 1" className="object-cover rounded-lg" />
-                </div>
-              </div>
-              <div className="carousel-slide">
-                <div className="slide-background">
-                  <img src={asset2} alt="Asset 2" className="object-cover rounded-lg" />
-                </div>
-              </div>
-              <div className="carousel-slide">
-                <div className="slide-background">
-                  <img src={asset3} alt="Asset 3" className="object-cover rounded-lg" />
-                </div>
-              </div>
-              <div className="carousel-slide">
-                <div className="slide-background">
-                  <img src={asset4} alt="Asset 4" className="object-cover rounded-lg" />
-                </div>
-              </div>
-              <div className="carousel-slide">
-                <div className="slide-background">
-                  <img src={asset5} alt="Asset 5" className="object-cover rounded-lg" />
-                </div>
-              </div>
-            </Carousel>
-          </div>
-          <div className="text-white text-lg leading-relaxed">
-            <h2 className="text-3xl font-bold mb-4">Skills & Technologies</h2>
-            <p>
-              I have experience working with modern technologies such as JavaScript, React.js, Node.js, MongoDB, and Tailwind CSS. I also have a strong foundation in API development, database
-              management, and creating efficient, scalable applications.
-            </p>
-          </div>
-        </div>
-
-        {/* Personal Interests - Text Centered */}
+        {/* Introduction */}
         <div className="text-white text-lg leading-relaxed text-center">
-          <h2 className="text-3xl font-bold mb-4">Beyond Coding</h2>
+          <h2 className="text-5xl font-bold mb-4 ">Who I Am</h2>
           <p>
-            When I’m not coding, I enjoy gaming, exploring new technologies, and finding creative ways to solve challenges. I’m always looking for opportunities to grow and expand my knowledge in the
-            tech space.
+            Hi, I’m Ricardo, a passionate full-stack developer with a love for problem-solving and creating impactful digital experiences. I specialize in JavaScript, React, and modern web
+            technologies to craft seamless, user-friendly applications. Currently, I’m working on Scripted Realms, a personal passion project that blends storytelling with interactive gameplay.
+            Through this project, I’m pushing my skills to new heights, particularly in game development and immersive UI design. <br />
+          </p>
+          <br />
+          <p>
+            It’s been an exciting challenge to create a unique, engaging experience for players, and I’m constantly learning as I work through the complexities of both the back-end and front-end.
+            Looking ahead, I’m eager to continue growing in the tech industry by developing innovative applications that solve real-world problems. My goal is to expand my expertise into areas like
+            mobile app development and full-stack solutions, continually honing my craft and making a positive impact through technology. Outside of coding, I value creativity, continuous learning,
+            and building solutions that are both functional and meaningful.
+          </p>
+        </div>
+
+        {/* Development Approach */}
+        <div className="text-white text-lg leading-relaxed text-center">
+          <h2 className="text-3xl font-bold mb-4 ">My Development Approach</h2>
+          <p>
+            I believe in writing clean, maintainable code that drives both functionality and user satisfaction. My approach to development is rooted in understanding the full scope of a project—from
+            design to deployment. I focus on building scalable solutions that grow with the needs of my clients. Whether it's a single-page application or a large-scale enterprise system, I prioritize
+            performance, security, and an intuitive user experience.
+          </p>
+          <br />
+          <p>
+            Using a combination of modern tools like React, Node.js, and MongoDB, I craft fast and efficient web applications that meet the demands of today’s digital world. I am constantly evolving
+            my skill set to keep pace with new advancements in the tech industry, and I look forward to creating more meaningful digital experiences.
           </p>
         </div>
       </div>

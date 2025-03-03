@@ -3,7 +3,11 @@ import { Helmet } from "react-helmet";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import homeImage from "../assets/home-image.png"; // Top-centered image
-import placeholderImage from "../assets/about-me-image.png"; // Placeholder image
+import asset1 from "../assets/AppCSSdesign.PNG"; // AppCSSDesign Asset
+import asset2 from "../assets/LoginDesign.PNG"; // LoginDesign
+import asset3 from "../assets/ReactHookdesign.PNG"; // ReactHookDesign
+import asset4 from "../assets/MongoDBDesign.PNG"; // MongoDBDesign
+import asset5 from "../assets/AppjsDesign.PNG"; // AppjsDesign
 import "../styles/carousel.css"; // Import custom carousel styles
 
 const Home = () => {
@@ -29,12 +33,16 @@ const Home = () => {
       <img src={homeImage} alt="Home Icon" className="w-80 h-80 rounded-full border-4 border-white drop-shadow-lg mb-10" />
 
       {/* Welcome Section */}
-      <div className="text-center text-white text-lg leading-relaxed mb-16 max-w-3xl mx-auto">
-        <h2 className="text-3xl font-bold mb-4">Welcome to My Portfolio</h2>
-        <p>
+      <div className="text-center text-white text-lg leading-relaxed mb-16 max-w-3xl mx-auto text-left">
+        <h2 className="text-3xl font-bold mb-4 text-center">Welcome to My Portfolio</h2>
+        <p className="">
           Welcome to my digital space where creativity meets technology. This portfolio is a reflection of my journey as a developer, designer, and problem solver. I am a passionate developer with
-          experience in both front-end and back-end technologies. My mission is to bridge the gap between aesthetic design and functional code, crafting seamless and interactive experiences for users.
-          Feel free to explore my projects, dive deeper into my development process, or get in touch with me for collaboration opportunities.
+          experience in both front-end and back-end technologies.{" "}
+        </p>
+        <p>
+          <br />
+          My mission is to bridge the gap between aesthetic design and functional code, crafting seamless and interactive experiences for users. Feel free to explore my projects, dive deeper into my
+          development process, or get in touch with me for collaboration opportunities.
         </p>
       </div>
 
@@ -65,45 +73,42 @@ const Home = () => {
               </button>
             )
           }
+          style={{ transform: "scale(0.7)" }} // Reduce the size by 30%
         >
           <div className="carousel-slide">
             <div className="slide-background">
-              {/* TODO: update placeholder images */}
-              <img src={placeholderImage} alt="Placeholder 1" className="object-cover rounded-lg" />
+              <img src={asset1} alt="Asset 1" className="object-cover rounded-lg" />
             </div>
           </div>
           <div className="carousel-slide">
             <div className="slide-background">
-              <img src={placeholderImage} alt="Placeholder 2" className="object-cover rounded-lg" />
+              <img src={asset2} alt="Asset 2" className="object-cover rounded-lg" />
             </div>
           </div>
           <div className="carousel-slide">
             <div className="slide-background">
-              <img src={placeholderImage} alt="Placeholder 3" className="object-cover rounded-lg" />
+              <img src={asset3} alt="Asset 3" className="object-cover rounded-lg" />
             </div>
           </div>
           <div className="carousel-slide">
             <div className="slide-background">
-              <img src={placeholderImage} alt="Placeholder 4" className="object-cover rounded-lg" />
+              <img src={asset4} alt="Asset 4" className="object-cover rounded-lg" />
             </div>
           </div>
           <div className="carousel-slide">
             <div className="slide-background">
-              <img src={placeholderImage} alt="Placeholder 5" className="object-cover rounded-lg" />
+              <img src={asset5} alt="Asset 5" className="object-cover rounded-lg" />
             </div>
           </div>
         </Carousel>
       </div>
 
-      {/* Development Approach Section */}
-      <div className="text-center text-white text-lg leading-relaxed mb-16 max-w-3xl mx-auto">
-        <h2 className="text-3xl font-bold mb-4">My Development Approach</h2>
+      {/* Skills & Technologies Section */}
+      <div className="text-white text-lg leading-relaxed mb-16 max-w-3xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-4">Skills & Technologies</h2>
         <p>
-          I believe in writing clean, maintainable code that drives both functionality and user satisfaction. My approach to development is rooted in understanding the full scope of a project—from
-          design to deployment. I focus on building scalable solutions that grow with the needs of my clients. Whether it's a single-page application or a large-scale enterprise system, I prioritize
-          performance, security, and an intuitive user experience. Using a combination of modern tools like React, Node.js, and MongoDB, I craft fast and efficient web applications that meet the
-          demands of today’s digital world. I am constantly evolving my skill set to keep pace with new advancements in the tech industry, and I look forward to creating more meaningful digital
-          experiences.
+          I have experience working with modern technologies such as JavaScript, React.js, Node.js, MongoDB, and Tailwind CSS. I also have a strong foundation in API development, database management,
+          and creating efficient, scalable applications.
         </p>
       </div>
 
@@ -111,10 +116,14 @@ const Home = () => {
       <div className="text-center text-white text-lg leading-relaxed max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold mb-4">Why I Build</h2>
         <p>
-          I build because I’m passionate about solving problems and creating innovative solutions that can positively impact people’s lives. For me, coding isn’t just about writing lines of code. It’s
-          about tackling challenges, learning new concepts, and thinking critically about how technology can improve the world. Whether it's developing a responsive website, an interactive
-          application, or a backend system that powers a service, I enjoy creating experiences that leave a lasting impression on users. The ever-evolving tech landscape fuels my desire to continue
-          growing and pushing the boundaries of what’s possible. Every project I work on is an opportunity to bring a unique idea to life and help others achieve their goals.
+          I build because I’m passionate about solving problems and creating innovative solutions that can positively impact people’s lives. For me, coding isn’t just about writing lines of code; it’s
+          about tackling challenges, learning new concepts, and thinking critically about how technology can improve the world.
+        </p>
+        <br />
+        <p>
+          Whether it's developing a responsive website, an interactive application, or a backend system that powers a service, I enjoy creating experiences that leave a lasting impression on users.
+          The ever-evolving tech landscape fuels my desire to continually grow and push the boundaries of what’s possible. Every project I work on is an opportunity to bring a unique idea to life and
+          help others achieve their goals.
         </p>
       </div>
     </div>
