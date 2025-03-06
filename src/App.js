@@ -1,24 +1,20 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Landing from "./pages/Landing"; // Landing page (shown first)
+import Landing from "./pages/Landing";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer"; // Import Footer
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <Router basename="/my-portfolio">
-      {/* Set the basename to /my-portfolio */}
       <Routes>
-        {/* Default Route for Landing Page */}
         <Route path="/" element={<Landing />} />
-
-        {/* All Other Pages (With Navbar & Footer) */}
         <Route
-          path="/*"
+          path="*"
           element={
             <div className="min-h-screen flex flex-col">
               <Navbar />
