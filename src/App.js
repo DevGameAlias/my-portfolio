@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Landing from "./pages/Landing"; // Now the landing page
+import Landing from "./pages/Landing"; // Landing page (shown first)
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/AboutMe";
@@ -12,8 +12,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        {/* Landing Page (No Navbar or Footer) */}
-        <Route path="/" element={<Landing />} />
+        {/* Landing Page (Shown first when users visit the root URL) */}
+        <Route index element={<Landing />} />
 
         {/* All Other Pages (With Navbar & Footer) */}
         <Route
