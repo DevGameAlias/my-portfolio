@@ -21,8 +21,7 @@ const Home = () => {
         <meta property="og:title" content="Home - My Portfolio" />
         <meta property="og:description" content="Welcome to my personal portfolio showcasing my journey, projects, and technical expertise." />
         <meta property="og:image" content={seoHome} />
-        {/* TODO: Replace 'https://your-portfolio-url.com' with the actual URL of your portfolio */}
-        <meta property="og:url" content="https://DevGameAlias.github.io/portfolio/home" />
+        <meta property="og:url" content="https://devgamealias.github.io/my-portfolio/home" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Home - My Portfolio" />

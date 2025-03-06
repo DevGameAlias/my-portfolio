@@ -22,8 +22,7 @@ const Contact = () => {
           content="Get in touch with Ricardo. Whether you have a project in mind, want to collaborate, or just want to chat about development, feel free to reach out via email, LinkedIn, or GitHub."
         />
         <meta property="og:image" content={contactSeo} />
-        {/*TODO: Replace 'https://your-portfolio-url.com/contact' with the actual URL of your portfolio*/}
-        <meta property="og:url" content="https://your-portfolio-url.com/contact" />
+        <meta property="og:url" content="https://devgamealias.github.io/my-portfolio/contact" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact - My Portfolio" />

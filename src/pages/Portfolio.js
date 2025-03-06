@@ -35,7 +35,7 @@ const Portfolio = () => {
         <meta property="og:title" content="Portfolio - My Work" />
         <meta property="og:description" content="Explore my portfolio showcasing various projects including a capstone project, upcoming calculator project, and a real-time weather application." />
         <meta property="og:image" content={portfolioSeo} />
-        <meta property="og:url" content="https://DevGameAlias.github.io/portfolio/portfolio" />
+        <meta property="og:url" content="https://devgamealias.github.io/my-portfolio/portfolio" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Portfolio - My Work" />

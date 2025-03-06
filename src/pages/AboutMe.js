@@ -14,8 +14,7 @@ const AboutMe = () => {
         <meta property="og:title" content="About Me - My Portfolio" />
         <meta property="og:description" content="Learn more about Ricardo, a passionate full-stack developer specializing in JavaScript, React, and modern web technologies." />
         <meta property="og:image" content={aboutSeo} />
-        {/* TODO: Replace 'https://your-portfolio-url.com/about' with the actual URL of your portfolio */}
-        <meta property="og:url" content="https://DevGameAlias.github.io/portfolio/about" />
+        <meta property="og:url" content="https://devgamealias.github.io/my-portfolio/about" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Me - My Portfolio" />

@@ -25,8 +25,7 @@ const Landing = () => {
         <meta property="og:title" content="Welcome - My Portfolio" />
         <meta property="og:description" content="Welcome to my personal portfolio showcasing my projects, skills, and contact information." />
         <meta property="og:image" content={landingSeo} />
-        {/* TODO: Replace 'https://your-portfolio-url.com' with the actual URL of your portfolio */}
-        <meta property="og:url" content="https://DevGameAlias.github.io/portfolio/" />
+        <meta property="og:url" content="https://devgamealias.github.io/my-portfolio/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Welcome - My Portfolio" />
