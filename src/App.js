@@ -10,12 +10,11 @@ import Footer from "./components/Footer"; // Import Footer
 
 const App = () => {
   return (
-    <Router basename="/portfolio">
-      {" "}
-      {/* Set the basename to /portfolio */}
+    <Router basename="/my-portfolio">
+      {/* Set the basename to /my-portfolio */}
       <Routes>
-        {/* Landing Page (Shown first when users visit the root URL) */}
-        <Route index element={<Landing />} />
+        {/* Default Route for Landing Page */}
+        <Route path="/" element={<Landing />} />
 
         {/* All Other Pages (With Navbar & Footer) */}
         <Route
@@ -25,10 +24,10 @@ const App = () => {
               <Navbar />
               <div className="flex-grow flex flex-col">
                 <Routes>
-                  <Route path="/home" element={<Home />} />
-                  <Route path="/portfolio" element={<Portfolio />} />
-                  <Route path="/about" element={<About />} />
-                  <Route path="/contact" element={<Contact />} />
+                  <Route path="home" element={<Home />} />
+                  <Route path="portfolio" element={<Portfolio />} />
+                  <Route path="about" element={<About />} />
+                  <Route path="contact" element={<Contact />} />
                 </Routes>
               </div>
               <Footer />
