@@ -8,6 +8,8 @@ import blogCreation from "../assets/Blogcreation.png";
 import blogComment from "../assets/Blogcomment.png";
 import blogHomepage from "../assets/BlogHomepage.png";
 import emailSign from "../assets/emailsignup.png";
+import calculator from "../assets/calculatorImg.png"; // Calculator Image
+import weatherApp from "../assets/Weather-app.png"; // Weather App Image
 import "../styles/carousel.css"; // Import custom carousel styles
 import portfolioSeo from "../assets/PortfolioSEO.png"; // SEO Image
 
@@ -158,9 +160,9 @@ const Portfolio = () => {
 
         {/* Upcoming Project Placeholder - Image Left, Text Right */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-          <div className="w-80 h-80 bg-gray-400 flex items-center justify-center rounded-lg shadow-lg">
-            <span className="text-white text-xl">[ Project Placeholder ]</span>
-          </div>
+          <a href="https://devgamealias.github.io/themed-calculator/" target="_blank" rel="noopener noreferrer" className="w-80 h-80 flex items-center justify-center rounded-lg shadow-lg">
+            <img src={calculator} alt="Themed Calculator" className="object-cover rounded-lg w-full h-full" />
+          </a>
           <div className="text-white text-lg leading-relaxed text-left">
             <h2 className="text-3xl font-bold mb-4 text-center">Themed Calculator</h2>
             <p>
@@ -205,9 +207,9 @@ const Portfolio = () => {
           </div>
 
           {/* Live Weather App Preview */}
-          <div className="w-80 h-80 bg-gray-900 flex items-center justify-center rounded-lg shadow-lg">
-            <iframe src="[LIVE_WEATHER_APP_URL]" title="Weather App" className="w-full h-full rounded-lg" />
-          </div>
+          <a href="https://devgamealias.github.io/weather-app/" target="_blank" rel="noopener noreferrer" className="w-80 h-80 flex items-center justify-center rounded-lg shadow-lg">
+            <img src={weatherApp} alt="Weather App" className="object-cover rounded-lg w-full h-full" />
+          </a>
         </div>
       </div>
 
