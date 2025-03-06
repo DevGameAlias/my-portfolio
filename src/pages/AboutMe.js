@@ -1,6 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import avatarImage from "../assets/avatar.png"; // Import Avatar Image
+import aboutSeo from "../assets/aboutMeseo.png"; // SEO Image
+
 import "../styles/carousel.css"; // Import custom carousel styles
 
 const AboutMe = () => {
@@ -11,16 +13,14 @@ const AboutMe = () => {
         <meta name="description" content="Learn more about Ricardo, a passionate full-stack developer specializing in JavaScript, React, and modern web technologies." />
         <meta property="og:title" content="About Me - My Portfolio" />
         <meta property="og:description" content="Learn more about Ricardo, a passionate full-stack developer specializing in JavaScript, React, and modern web technologies." />
-        {/* TODO: Replace 'link_to_your_image.jpg' with the actual URL of your representative image */}
-        <meta property="og:image" content="link_to_your_image.jpg" />
+        <meta property="og:image" content={aboutSeo} />
         {/* TODO: Replace 'https://your-portfolio-url.com/about' with the actual URL of your portfolio */}
         <meta property="og:url" content="https://your-portfolio-url.com/about" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Me - My Portfolio" />
         <meta name="twitter:description" content="Learn more about Ricardo, a passionate full-stack developer specializing in JavaScript, React, and modern web technologies." />
-        {/* TODO: Replace 'link_to_your_image.jpg' with the actual URL of your representative image */}
-        <meta name="twitter:image" content="link_to_your_image.jpg" />
+        <meta name="twitter:image" content={aboutSeo} />
       </Helmet>
       {/* Top Centered Avatar Image */}
       <img src={avatarImage} alt="Avatar" className="w-80 h-80 rounded-full border-4 border-white drop-shadow-lg mb-10" />

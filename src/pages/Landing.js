@@ -5,7 +5,7 @@ import homeImage from "../assets/home-image.png"; // Home Page Image
 import portfolioImage from "../assets/portfolio-image.png"; // Portfolio Page Image
 import aboutMeImage from "../assets/about-me-image.png"; // About Me Page Image
 import contactImage from "../assets/contact-me.png"; // Contact Page Image
-
+import landingSeo from "../assets/landingPageseo.png"; // SEO Image
 const Landing = () => {
   const navigate = useNavigate(); // Hook for navigation
 
@@ -24,16 +24,14 @@ const Landing = () => {
         <meta name="description" content="Welcome to my personal portfolio showcasing my projects, skills, and contact information." />
         <meta property="og:title" content="Welcome - My Portfolio" />
         <meta property="og:description" content="Welcome to my personal portfolio showcasing my projects, skills, and contact information." />
-        {/* TODO: Replace 'link_to_your_image.jpg' with the actual URL of your representative image */}
-        <meta property="og:image" content="link_to_your_image.jpg" />
+        <meta property="og:image" content={landingSeo} />
         {/* TODO: Replace 'https://your-portfolio-url.com' with the actual URL of your portfolio */}
         <meta property="og:url" content="https://your-portfolio-url.com" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Welcome - My Portfolio" />
         <meta name="twitter:description" content="Welcome to my personal portfolio showcasing my projects, skills, and contact information." />
-        {/* TODO: Replace 'link_to_your_image.jpg' with the actual URL of your representative image */}
-        <meta name="twitter:image" content="link_to_your_image.jpg" />
+        <meta name="twitter:image" content={landingSeo} />
       </Helmet>
       <h1 className="text-4xl font-bold text-white mb-8">Welcome to My Portfolio!</h1>
 

@@ -2,13 +2,15 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
+import "../styles/carousel.css"; // Import custom carousel styles
+
 import homeImage from "../assets/home-image.png"; // Top-centered image
 import asset1 from "../assets/AppCSSdesign.PNG"; // AppCSSDesign Asset
 import asset2 from "../assets/LoginDesign.PNG"; // LoginDesign
 import asset3 from "../assets/ReactHookdesign.PNG"; // ReactHookDesign
 import asset4 from "../assets/MongoDBDesign.PNG"; // MongoDBDesign
 import asset5 from "../assets/AppjsDesign.PNG"; // AppjsDesign
-import "../styles/carousel.css"; // Import custom carousel styles
+import seoHome from "../assets/homePageseo.png"; // SEO Image
 
 const Home = () => {
   return (
@@ -18,16 +20,14 @@ const Home = () => {
         <meta name="description" content="Welcome to my personal portfolio showcasing my journey, projects, and technical expertise." />
         <meta property="og:title" content="Home - My Portfolio" />
         <meta property="og:description" content="Welcome to my personal portfolio showcasing my journey, projects, and technical expertise." />
-        {/*TODO: Replace 'link_to_your_image.jpg' with the actual URL of your representative image*/}
-        <meta property="og:image" content="link_to_your_image.jpg" />
+        <meta property="og:image" content={seoHome} />
         {/* TODO: Replace 'https://your-portfolio-url.com' with the actual URL of your portfolio */}
         <meta property="og:url" content="https://your-portfolio-url.com" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Home - My Portfolio" />
         <meta name="twitter:description" content="Welcome to my personal portfolio showcasing my journey, projects, and technical expertise." />
-        {/*  TODO: Replace 'link_to_your_image.jpg' with the actual URL of your representative image  */}
-        <meta name="twitter:image" content="link_to_your_image.jpg" />
+        <meta name="twitter:image" content={seoHome} />
       </Helmet>
       {/* Top Centered Image */}
       <img src={homeImage} alt="Home Icon" className="w-80 h-80 rounded-full border-4 border-white drop-shadow-lg mb-10" />
