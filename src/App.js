@@ -10,7 +10,9 @@ import Footer from "./components/Footer"; // Import Footer
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/portfolio">
+      {" "}
+      {/* Set the basename to /portfolio */}
       <Routes>
         {/* Landing Page (Shown first when users visit the root URL) */}
         <Route index element={<Landing />} />
