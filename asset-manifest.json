@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.f64068e6.css",
+    "main.js": "/portfolio/static/js/main.680cc557.js",
+    "static/media/about-me-image.png": "/portfolio/static/media/about-me-image.a4b3f8c417e2706a2ad0.png",
+    "static/media/portfolio-image.png": "/portfolio/static/media/portfolio-image.1d7d2d90b24b0e2ef678.png",
+    "static/media/home-image.png": "/portfolio/static/media/home-image.ccff6040aa4b8343d3a4.png",
+    "static/media/contact-me.png": "/portfolio/static/media/contact-me.c6da2eafc91ac0fe4213.png",
+    "static/media/landingPageseo.png": "/portfolio/static/media/landingPageseo.c3610c318cb1d61976f0.png",
+    "static/media/aboutMeseo.png": "/portfolio/static/media/aboutMeseo.624abfd32317e67aba8c.png",
+    "static/media/PortfolioSEO.png": "/portfolio/static/media/PortfolioSEO.f984787798bdcc8dd0ea.png",
+    "static/media/homePageseo.png": "/portfolio/static/media/homePageseo.890658d1e081e1ee835b.png",
+    "static/media/contactMeseo.png": "/portfolio/static/media/contactMeseo.7ee7d2bb881c7677d930.png",
+    "static/media/Blogcreation.png": "/portfolio/static/media/Blogcreation.c196ced8100e3b8b786d.png",
+    "static/media/avatar.png": "/portfolio/static/media/avatar.1f39a8a2b8def3703397.png",
+    "static/media/calculatorImg.png": "/portfolio/static/media/calculatorImg.6864e25249396555250a.png",
+    "static/media/Weather-app.png": "/portfolio/static/media/Weather-app.de6af17d974262d4cef2.png",
+    "static/media/BlogHomepage.png": "/portfolio/static/media/BlogHomepage.fad7082c3e7af3f9b6cc.png",
+    "static/media/Blogcomment.png": "/portfolio/static/media/Blogcomment.fbd344921c7e1d2726d1.png",
+    "static/media/LoginDesign.PNG": "/portfolio/static/media/LoginDesign.8a48b9e4042f47463dd1.PNG",
+    "static/media/Userprofile.png": "/portfolio/static/media/Userprofile.2049423646efa8013a33.png",
+    "static/media/emailsignup.png": "/portfolio/static/media/emailsignup.a8e6f84e4ed31055d850.png",
+    "static/media/MongoDBDesign.PNG": "/portfolio/static/media/MongoDBDesign.4ae6dd9ac27328a3af5a.PNG",
+    "static/media/ReactHookdesign.PNG": "/portfolio/static/media/ReactHookdesign.0d37e5a59b5f55457b57.PNG",
+    "static/media/AppjsDesign.PNG": "/portfolio/static/media/AppjsDesign.edbe2c932c3bf51ac0ef.PNG",
+    "static/media/AppCSSdesign.PNG": "/portfolio/static/media/AppCSSdesign.f258fb7f617135d23aab.PNG",
+    "index.html": "/portfolio/index.html",
+    "main.f64068e6.css.map": "/portfolio/static/css/main.f64068e6.css.map",
+    "main.680cc557.js.map": "/portfolio/static/js/main.680cc557.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f64068e6.css",
+    "static/js/main.680cc557.js"
+  ]
+}
